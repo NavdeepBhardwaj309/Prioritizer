@@ -1,0 +1,14 @@
+{
+  
+  "name": "prioritizer",
+  "scripts": {
+    "dev": "concurrently --names \"SERVER,CLIENT\" --prefix-colors \"bgBlue.bold,bgGreen.bold\" \"npm run server\" \"npm run client\"",
+   "server": "node server/server.js",     
+    "client": "npm --prefix client run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
+
+
